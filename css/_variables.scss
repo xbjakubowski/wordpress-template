@@ -1,0 +1,30 @@
+$color: #030095;//#0500a0;
+$gray: #5e666e;
+$light-gray: #f5f5f5;
+$dark-gray: #404040;
+$white: #ffffff;
+$bootstrap-blue: #337ab7;
+$black: #000000;
+
+$red: 	 hsl(355, 100%, 75%);
+$orange: hsl(20, 100%, 75%);
+$yellow: hsl(60, 100%, 75%);
+$green:  hsl(120, 100%, 75%);
+$cyan:   hsl(180, 100%, 75%);
+$blue:   hsl(240, 100%, 75%);
+$violet: hsl(300, 100%, 75%);
+
+@mixin transition($element: all, $time: .4s, $option: ease) {
+    -webkit-transition: $element $time $option;
+	-o-transition: $element $time $option;
+	-moz-transition: $element $time $option;
+    transition: $element $time $option;
+}
+
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}

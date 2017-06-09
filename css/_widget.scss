@@ -1,0 +1,61 @@
+.news{
+	padding: 15px 20px;
+	color: $black;
+	& > p{
+		text-align: justify;
+		font-size: 0.85em;
+		min-height: 16px;
+		display: block;
+		font-weight: bold;
+	}
+	& > .date{
+		//color: #b0adad;
+	}	
+	& 	.bold{
+		font-weight: 700;
+		font-size: 14px;
+	}
+}
+
+.more-link{
+	&:link,
+	&:visited{
+		color: $color;
+	}
+	&:focus,
+	&:hover{
+		color: $black;
+	}
+}
+
+.rb{
+	list-style: none;
+	& > a{
+		padding: 15px 20px;
+		display: block;
+		margin-bottom: 5px;
+		&:link,
+		&:visited{
+			background: $light-gray;
+			color: $black;
+		}
+		&:focus,
+		&:hover{
+			background: $black;//$gray;
+			color: $white;
+			& >ul{
+				opacity: 1;
+				height: auto;
+			}
+		}
+		& >ul{
+
+		}
+	}
+}
+.rb--children{
+			transition: opacity 1s ease-out;
+			opacity: 0; 
+			height: 0;
+			overflow: hidden;
+}
